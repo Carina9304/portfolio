@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>李忆敬 · GNC 市场营销管培生作品集</title>
+<meta name="description" content="李忆敬的市场营销求职作品集：GNC 新媒体传播策划、星巴克 SWOT 分析、Bilibili 美食博主话语策略研究，以及实习经历与核心能力。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#05070a;
+  --bg2:#06121e;
+  --panel:rgba(255,255,255,.03);
+  --panel2:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.09);
+  --text:#e9f1f6;
+  --muted:#9fb2bf;
+  --faint:#6a7f8d;
+  --accent:#8bf3e6;
+  --accent2:#46b7ff;
+  --accent3:#7c93ff;
+  --gold:#e7c78e;
+  --display:"Sora","Noto Sans SC",sans-serif;
+  --sans:"Noto Sans SC","Sora",sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.75;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(900px 600px at 12% -8%, rgba(70,183,255,.16), transparent 60%),
+  radial-gradient(1000px 700px at 88% 8%, rgba(139,243,230,.12), transparent 55%),
+  radial-gradient(1100px 800px at 50% 110%, rgba(124,147,255,.10), transparent 60%),
+  var(--bg);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(circle at 50% 20%,#000 0%,transparent 72%);}
+a{color:inherit;text-decoration:none;}
+.progress{position:fixed;left:0;top:0;height:2px;width:0;z-index:99;background:linear-gradient(90deg,var(--accent),var(--accent2));}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;backdrop-filter:blur(12px);background:rgba(5,7,10,.55);border-bottom:1px solid var(--line);}
+.brand{font-family:var(--display);font-weight:700;letter-spacing:.04em;font-size:18px;}
+.brand em{font-style:normal;color:var(--accent);}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:14px;color:var(--muted);transition:.25s;}
+.nav-links a:hover{color:var(--text);}
+.nav-links a.on{color:var(--accent);}
+
+section{max-width:1180px;margin:0 auto;padding:110px 40px;}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);}
+.kicker::before{content:"";width:28px;height:1px;background:var(--accent);}
+h2{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.06;font-weight:700;margin:20px 0 16px;letter-spacing:-.01em;}
+h3{font-family:var(--display);font-size:20px;font-weight:700;}
+.lead{color:var(--muted);font-size:17px;max-width:720px;}
+
+/* hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;max-width:1180px;margin:0 auto;padding:120px 40px 90px;position:relative;}
+.hero .name{font-family:var(--display);font-weight:900;font-size:clamp(64px,11vw,148px);line-height:.96;letter-spacing:-.02em;}
+.hero .name .accent{color:var(--accent);}
+.hero .en{font-family:var(--display);font-size:clamp(20px,2.6vw,34px);letter-spacing:.42em;color:var(--muted);margin:24px 0 32px;}
+.hero .tagline{font-size:clamp(19px,2.4vw,28px);color:var(--text);max-width:860px;font-weight:500;}
+.hero .tagline b{color:var(--accent);font-weight:700;}
+.hero .meta{color:var(--faint);margin-top:26px;font-size:14px;letter-spacing:.05em;}
+.hero .cta{display:flex;gap:16px;margin-top:42px;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;border:1px solid var(--line);background:var(--panel2);font-size:14px;font-weight:500;transition:.25s;cursor:pointer;}
+.btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
+.btn.solid{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#04121f;border:none;font-weight:700;}
+.scroll-hint{position:absolute;bottom:34px;left:40px;color:var(--faint);font-size:12px;letter-spacing:.2em;font-family:var(--display);}
+.scroll-hint::after{content:"";display:block;width:1px;height:42px;background:linear-gradient(var(--accent),transparent);margin-top:10px;animation:drip 1.6s var(--ease) infinite;}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}100%{transform:scaleY(1);transform-origin:bottom;opacity:0;}}
+
+/* generic grids */
+.fit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;}
+.fit{border:1px solid var(--line);background:var(--panel);padding:28px;border-radius:16px;transition:.3s;}
+.fit:hover{transform:translateY(-4px);border-color:rgba(139,243,230,.35);}
+.fit .idx{font-family:var(--display);font-size:13px;color:var(--accent);letter-spacing:.1em;}
+.fit h3{font-size:18px;margin:12px 0 10px;}
+.fit p{font-size:14px;color:var(--muted);}
+
+/* projects */
+.project{padding:72px 0;border-top:1px solid var(--line);}
+.project:last-of-type{border-bottom:1px solid var(--line);}
+.proj-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:8px;}
+.proj-head .no{font-family:var(--display);font-size:13px;letter-spacing:.16em;color:var(--faint);}
+.proj-head h3{font-size:clamp(24px,3.2vw,36px);margin-top:8px;line-height:1.2;}
+.proj-role{color:var(--accent);font-size:13px;margin:6px 0 22px;}
+.proj-intro{color:var(--muted);font-size:15px;max-width:900px;margin-bottom:30px;}
+
+.stats-row{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:34px;}
+.stat{border:1px solid var(--line);background:var(--panel);padding:20px 18px;border-radius:14px;}
+.stat .kpi{font-family:var(--display);font-size:28px;font-weight:700;color:var(--accent);line-height:1.1;}
+.stat .kpi small{font-size:13px;color:var(--muted);font-weight:400;}
+.stat .lbl{font-size:13px;color:var(--text);margin-top:8px;font-weight:500;}
+
+.block-title{font-family:var(--display);font-size:14px;letter-spacing:.18em;color:var(--accent2);margin:0 0 16px;}
+.secgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px;}
+.sec{border:1px solid var(--line);background:var(--panel);padding:20px;border-radius:14px;}
+.sec .t{font-weight:700;font-size:16px;margin-bottom:8px;}
+.sec .t b{color:var(--accent);font-family:var(--display);font-weight:700;margin-right:8px;}
+.sec p{font-size:13px;color:var(--muted);}
+
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:26px;}
+.swot .cell{border:1px solid var(--line);background:var(--panel);padding:22px;border-radius:14px;}
+.swot .cell .h{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:.06em;margin-bottom:12px;}
+.swot .cell.s .h{color:var(--accent);}.swot .cell.w .h{color:var(--gold);}.swot .cell.o .h{color:var(--accent2);}.swot .cell.t .h{color:#e08a8a;}
+.swot .cell ul{list-style:none;}
+.swot .cell li{font-size:13px;color:var(--muted);padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);}
+.swot .cell li:last-child{border-bottom:0;}
+
+.findings{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:26px;}
+.finding{border:1px solid var(--line);background:var(--panel);padding:20px;border-radius:14px;}
+.finding .h{font-weight:700;font-size:15px;margin-bottom:8px;color:var(--text);}
+.finding p{font-size:13px;color:var(--muted);}
+.finding p b{color:var(--accent);font-weight:500;}
+.conclusion{border-left:2px solid var(--accent);padding:6px 0 6px 18px;color:var(--text);font-size:15px;margin-bottom:26px;}
+.conclusion b{color:var(--accent);}
+.download{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--faint);padding:9px 14px;border:1px solid var(--line);border-radius:8px;transition:.25s;}
+.download:hover{color:var(--accent);border-color:var(--accent);}
+.download .ext{font-family:var(--display);color:var(--accent);font-size:11px;}
+
+/* experience */
+.exp{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:34px;margin-bottom:20px;}
+.exp .top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline;margin-bottom:16px;}
+.exp h3{font-size:20px;}
+.exp .when{color:var(--accent);font-size:13px;font-family:var(--display);letter-spacing:.04em;}
+.exp ul{list-style:none;}
+.exp li{position:relative;padding:7px 0 7px 22px;color:var(--muted);font-size:14px;}
+.exp li::before{content:"";position:absolute;left:2px;top:14px;width:7px;height:7px;border-radius:50%;background:var(--accent);}
+.exp li b{color:var(--text);font-weight:500;}
+
+/* education / skills */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;}
+.edu h4{font-size:15px;margin-bottom:6px;}
+.edu .sub{color:var(--faint);font-size:13px;margin-bottom:8px;}
+.edu p{color:var(--muted);font-size:14px;}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;}
+.skill{padding:9px 15px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:13px;color:var(--text);}
+.skill b{color:var(--accent);font-weight:500;}
+
+/* contact */
+.contact{text-align:center;padding:130px 40px;}
+.contact h2{margin-bottom:12px;}
+.contact .pitch{max-width:760px;margin:0 auto 28px;color:var(--muted);font-size:16px;}
+.contact .mail{font-family:var(--display);font-size:clamp(24px,4vw,40px);color:var(--accent);font-weight:700;display:inline-block;margin-top:16px;}
+.contact .meta{color:var(--faint);margin-top:14px;}
+footer{border-top:1px solid var(--line);padding:28px 40px;color:var(--faint);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;max-width:1180px;margin:0 auto;}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+.reveal.in-view{opacity:1;transform:none;}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+@media (max-width:820px){
+  nav{padding:14px 20px;}.nav-links{display:none;}section{padding:80px 22px;}.hero{padding:110px 22px 70px;}
+  .fit-grid,.stats-row,.secgrid,.swot,.findings,.edu-grid{grid-template-columns:1fr;}
+  .project{padding:48px 0;}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}.reveal{opacity:1;transform:none;}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<nav>
+  <div class="brand">LI YIJING <em>·</em> PORTFOLIO</div>
+  <div class="nav-links">
+    <a href="#fit" class="on">岗位匹配</a>
+    <a href="#projects">项目作品</a>
+    <a href="#experience">实习经历</a>
+    <a href="#education">教育背景</a>
+    <a href="#contact">联系</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="kicker reveal">GNC MARKETING TRAINEE · PORTFOLIO</div>
+  <h1 class="name reveal d1">李忆敬<span class="accent">.</span></h1>
+  <div class="en reveal d2">LI YIJING</div>
+  <p class="tagline reveal d3">具备营销活动全流程策划、新媒体内容创作与数据复盘能力，<b>对膳食营养与大健康赛道有热情</b>，能落地品牌传播与营销活动，持续提升曝光与口碑。</p>
+  <div class="meta reveal d3">求职意向：市场营销管培生 · 上海 · 13732639455 · liyijingcarina@outlook.com</div>
+  <div class="cta reveal d4">
+    <a class="btn solid" href="#projects">查看项目作品</a>
+    <a class="btn" href="#experience">了解实习经历</a>
+  </div>
+  <div class="scroll-hint">SCROLL</div>
+</header>
+
+<!-- FIT -->
+<section id="fit">
+  <div class="kicker reveal">JOB FIT</div>
+  <h2 class="reveal">我能胜任这个岗位</h2>
+  <p class="lead reveal">对照 GNC 市场营销管培生的六项职责，我的经验与能力一一对应。</p>
+  <div class="fit-grid">
+    <div class="fit reveal"><div class="idx">01 · 品牌运营与推广</div><h3>跟进品牌传播节奏</h3><p>GNC 新媒体传播策划：规划小红书、抖音双平台内容节奏，跟进品牌宣发落地。</p></div>
+    <div class="fit reveal d1"><div class="idx">02 · 营销活动策划执行</div><h3>全流程活动落地</h3><p>新东方主题营销活动用户参与率 90%；GNC 挑战赛从筹备、执行到收尾独立推进。</p></div>
+    <div class="fit reveal d2"><div class="idx">03 · 内容物料输出</div><h3>适配多平台物料</h3><p>独立产出种草文案、口播脚本、海报文案、FAQ 话术，适配各平台传播特性。</p></div>
+    <div class="fit reveal"><div class="idx">04 · 数据统计与复盘</div><h3>数据驱动复盘</h3><p>搭建曝光、互动、口碑指标监测体系，跟踪投放效果并输出复盘结论。</p></div>
+    <div class="fit reveal d1"><div class="idx">05 · 营销方案优化</div><h3>迭代营销玩法</h3><p>以数据反馈迭代内容方向；运用 SWOT 模型推导竞争策略与落地建议。</p></div>
+    <div class="fit reveal d2"><div class="idx">06 · 跨部门协作落地</div><h3>保障项目交付</h3><p>对接设计、产品、上级，同步进度与风险，按时交付营销任务。</p></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="kicker reveal">PROJECTS</div>
+  <h2 class="reveal">项目作品</h2>
+  <p class="lead reveal">三份完整分析报告，内容已直接呈现，无需额外下载。</p>
+
+  <div class="project reveal">
+    <div class="proj-head"><div><div class="no">01 / GNC</div><h3>GNC 年轻群体营养认知新媒体传播策划项目</h3></div></div>
+    <div class="proj-role">项目负责人 · 2026.09–2026.10 · 附件：健安喜 GNC 品牌分析报告（42 页 · 6 大板块）</div>
+    <p class="proj-intro">策划「日常轻营养，活力不费力」年轻化挑战赛，规划小红书、抖音双平台传播节奏，独立产出全套营销物料，搭建数据监测体系并完成复盘与方案迭代。以下是报告核心内容速览。</p>
+
+    <div class="stats-row">
+      <div class="stat"><div class="kpi">NO.1<small> 2022-2024</small></div><div class="lbl">营养包全球销量第一</div></div>
+      <div class="stat"><div class="kpi">~200%<small> YoY</small></div><div class="lbl">中国区业绩增长</div></div>
+      <div class="stat"><div class="kpi">&gt;50%<small> 市占率</small></div><div class="lbl">营养包在华市场地位</div></div>
+      <div class="stat"><div class="kpi">1500+<small> SKU</small></div><div class="lbl">16 大产品系列</div></div>
+      <div class="stat"><div class="kpi">50+<small> 国家地区</small></div><div class="lbl">全球业务覆盖</div></div>
+    </div>
+
+    <div class="block-title">REPORT OUTLINE · 报告框架</div>
+    <div class="secgrid">
+      <div class="sec"><div class="t"><b>01</b>品牌概括</div><p>1935 年创立，近 90 年历史，全球领先健康营养品牌，「Live Well 活出生命力」。</p></div>
+      <div class="sec"><div class="t"><b>02</b>市场分析</div><p>全球 2034 年预计 2193.3 亿美元；中国 2030 年预计 1.5 万亿；PEST 与竞争格局。</p></div>
+      <div class="sec"><div class="t"><b>03</b>用户分析</div><p>主力 30–50 岁、增长 21–30 岁；痛点：营养不均衡、亚健康、选品困难。</p></div>
+      <div class="sec"><div class="t"><b>04</b>产品体系</div><p>「每日营养包」+「抗衰鱼油」双明星单品，本土化定制，1500+ SKU。</p></div>
+      <div class="sec"><div class="t"><b>05</b>营销策略</div><p>中高端定价、线上主导全渠道、场景化内容、品牌特色营销与私域运营。</p></div>
+      <div class="sec"><div class="t"><b>06</b>SWOT 分析</div><p>品牌/科研/品质/本土化优势明显，围绕本土化、年轻化提出四点发展建议。</p></div>
+    </div>
+    <div class="conclusion"><b>核心结论：</b>GNC 是外资品牌本土化转型的成功标杆，凭借「每日营养包」在核心细分赛道建立绝对优势。</div>
+    <a class="download" href="assets/gnc-brand-analysis.pptx" download>下载完整报告 <span class="ext">PPTX</span></a>
+  </div>
+
+  <div class="project reveal">
+    <div class="proj-head"><div><div class="no">02 / STARBUCKS</div><h3>星巴克在华市场竞争力 SWOT 分析</h3></div></div>
+    <div class="proj-role">项目组长 · 小组课程项目 · 2023.05–2023.06 · 附件：星巴克市场竞争力分析（英文）</div>
+    <p class="proj-intro">英文撰写星巴克中国市场 SWOT 分析，拆解内部优劣势与外部机遇威胁，推导 SO / ST / WO / WT 四类竞争策略，并从品牌传播与产品运营提出落地建议。</p>
+
+    <div class="swot">
+      <div class="cell s"><div class="h">STRENGTHS · 优势</div><ul><li>良好的企业形象与社会责任</li><li>以「人」为核心的卓越企业文化</li><li>尊重文化差异的跨文化营销</li></ul></div>
+      <div class="cell w"><div class="h">WEAKNESSES · 劣势</div><ul><li>高租金与拒绝加盟带来资金链压力</li><li>快速扩张导致服务体验下降</li></ul></div>
+      <div class="cell o"><div class="h">OPPORTUNITIES · 机会</div><ul><li>中国咖啡消费潜力巨大（人均远低于日本）</li><li>地方政府重视咖啡产业</li></ul></div>
+      <div class="cell t"><div class="h">THREATS · 威胁</div><ul><li>瑞幸等本土品牌竞争加剧</li><li>原料价格波动与环保议题</li></ul></div>
+    </div>
+    <div class="conclusion"><b>策略结论：</b>综合评估后推荐 SO 战略，并落地「强化星巴克式服务体验、走向大众体验、升级周边产品、按中国国情调整运营」四项措施。</div>
+    <a class="download" href="assets/starbucks-swot-analysis.docx" download>下载完整报告 <span class="ext">DOCX</span></a>
+  </div>
+
+  <div class="project reveal">
+    <div class="proj-head"><div><div class="no">03 / BILIBILI</div><h3>Bilibili 美食博主营销话语策略效能研究</h3></div></div>
+    <div class="proj-role">项目组长 · 小组课程项目 · 2026.09–2026.11 · 附件：研究汇报（PPTX）+ 完整报告（DOCX）</div>
+    <p class="proj-intro">针对短视频 KOL 营销场景，分层筛选 180 条样本并人工编码，量化分析话语策略与播放、点赞的关系，沉淀可落地的内容营销创作方法。</p>
+
+    <div class="findings">
+      <div class="finding"><div class="h">设问引流</div><p><b>18%</b> 标题使用疑问句，<b>30%</b> 开场使用疑问句；百万粉博主的标题疑问句占比 <b>33%</b>，远高于小博主的 12.2%。</p></div>
+      <div class="finding"><div class="h">背景铺垫</div><p>180 条视频中 <b>103 条</b> 使用背景铺垫，百万粉博主使用率高达 <b>91%</b>。</p></div>
+      <div class="finding"><div class="h">结果复现</div><p>出现 <b>71 次</b>（不足半数），结构完整（背景铺垫 + 结果复现）与播放量呈正相关。</p></div>
+      <div class="finding"><div class="h">表征策略</div><p>修辞、情绪共鸣、多重互动是提升观看与互动的重要表达方法。</p></div>
+    </div>
+    <div class="conclusion"><b>研究价值：</b>总结「设问引流、背景铺垫、情绪共鸣」等高效内容表达方法，可直接迁移到品牌新媒体物料创作与数据复盘。</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <a class="download" href="assets/bilibili-food-vloggers-study.pptx" download>下载研究汇报 <span class="ext">PPTX</span></a>
+      <a class="download" href="assets/bilibili-food-vloggers-study.docx" download>下载完整报告 <span class="ext">DOCX</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="kicker reveal">EXPERIENCE</div>
+  <h2 class="reveal">实习经历</h2>
+  <p class="lead reveal">两段市场相关实习，完整覆盖品牌运营、活动落地、内容物料与数据复盘。</p>
+
+  <div class="exp reveal">
+    <div class="top"><h3>新东方教育集团 · 用户运营 &amp; 营销活动助理</h3><div class="when">2023.01 – 2025.03</div></div>
+    <ul>
+      <li><b>品牌运营：</b>协助用户运营维护，搭建标准化对外沟通物料模板，用户满意度由 82% 提升至 <b>94%</b>。</li>
+      <li><b>活动策划：</b>独立策划主题营销活动，覆盖方案、筹备、执行、收尾全流程，活动用户参与率达 <b>90%</b>。</li>
+      <li><b>内容物料：</b>产出宣传文案、周报素材、活动答疑话术，适配不同传播场景。</li>
+      <li><b>数据复盘：</b>统计曝光、互动指标，跟踪投放效果，基于用户反馈持续优化活动方案。</li>
+      <li><b>跨部门协同：</b>联动多职能团队同步进度、协调资源，按时交付营销任务。</li>
+    </ul>
+  </div>
+
+  <div class="exp reveal">
+    <div class="top"><h3>中语智汇科技有限公司 · 海外市场营销专员</h3><div class="when">2024.01 – 2024.06</div></div>
+    <ul>
+      <li><b>海外运营：</b>参与 Ins、Facebook 社媒营销项目，负责海外内容运营与本地化传播。</li>
+      <li><b>市场调研：</b>开展海外市场调研与竞品分析，参与社媒内容策划。</li>
+      <li><b>英文文案：</b>承担英文营销文案、产品介绍文档的翻译校对与本地化适配。</li>
+      <li><b>项目复盘：</b>参与 KOL 合作基础流程，输出项目复盘文档，沉淀调研方法论。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="kicker reveal">EDUCATION &amp; SKILLS</div>
+  <h2 class="reveal">教育背景与能力</h2>
+  <div class="edu-grid">
+    <div class="edu reveal">
+      <h4>香港城市大学 · 语言研究硕士</h4>
+      <div class="sub">2025.09 – 2026.10</div>
+      <p>聚焦话语与互动分析，训练受众语言洞察、传播文本修辞与跨文化语用研判能力。</p>
+    </div>
+    <div class="edu reveal d1">
+      <h4>扬州大学 · 商务英语本科</h4>
+      <div class="sub">2021.09 – 2025.06</div>
+      <p>主修国际营销、跨文化商务、国际贸易、商务英语写作等课程，具备市场调研与营销基础。</p>
+    </div>
+  </div>
+  <div class="skills reveal">
+    <span class="skill"><b>语言：</b>雅思 7.0 · 专八 · 专四 · BEC 中级</span>
+    <span class="skill"><b>文案：</b>小红书 / 抖音文案 · 海报 · 话术模板</span>
+    <span class="skill"><b>数据：</b>曝光 / 互动 / 口碑指标整理与复盘</span>
+    <span class="skill"><b>营销：</b>活动全流程策划与落地</span>
+    <span class="skill"><b>获奖：</b>BETT 英语写作大赛全国二等奖 · 亿学杯二等奖</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="kicker reveal">CONTACT</div>
+  <h2 class="reveal">期待加入 GNC 市场团队</h2>
+  <p class="pitch reveal">拥有完整营销策划、内容创作与数据复盘实战经验，对膳食营养与大健康赛道有热情，能以数据驱动方案优化，落地品牌传播与营销活动，持续提升品牌曝光与用户口碑。</p>
+  <a class="mail reveal" href="mailto:liyijingcarina@outlook.com">liyijingcarina@outlook.com</a>
+  <div class="meta reveal">13732639455 · 上海</div>
+</section>
+
+<footer>
+  <span>© 2026 李忆敬 · 个人求职作品集</span>
+  <span>报告内容为个人 / 课程项目展示</span>
+</footer>
+
+<script>
+const progress=document.getElementById('progress');
+function onScroll(){const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;progress.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in-view');});},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const links=[...document.querySelectorAll('.nav-links a')];
+const map={fit:0,projects:1,experience:2,education:3,contact:4};
+const spy=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('on'));const idx=map[e.target.id];if(idx!==undefined)links[idx].classList.add('on');}});},{rootMargin:'-45% 0px -50% 0px'});
+['fit','projects','experience','education','contact'].forEach(id=>{const el=document.getElementById(id);if(el)spy.observe(el);});
+</script>
+</body>
+</html>
