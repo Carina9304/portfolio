@@ -3,3 +3,5 @@
 Personal portfolio website for the GNC Marketing Management Trainee application.
 
 - Live site: https://Carina9304.github.io/portfolio/
+
+> Live: https://portfolio-site-du5.pages.dev
